@@ -5,7 +5,8 @@ This project is an intelligent text summarization system based on large language
 ### 1.Text Preprocessing and Intelligent Segmentation Process
 The system first preprocesses the input text using a sliding-window-based intelligent segmentation algorithm. This algorithm not only considers character length constraints but, more importantly, preserves semantic integrity. The implementation process is as follows:
 
-**Paragraph-level segmentation:** The text is initially segmented by natural paragraphs to maintain logical structure.\n
+**Paragraph-level segmentation:** The text is initially segmented by natural paragraphs to maintain logical structure.
+
 **Sliding window control:** Fine-grained segmentation is performed based on a predefined window size (e.g., 8,000 characters) and overlap size (e.g., 800 characters).
 **Punctuation-aware splitting:** Segmentation occurs at sentence-ending punctuation marks (e.g., period, question mark, exclamation mark) to avoid breaking sentences midway.
 **Overlap optimization:** Appropriate overlap starting points are determined to ensure coherence and contextual integrity between segments.
